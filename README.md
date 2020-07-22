@@ -1,3 +1,4 @@
+<img src=images/divvy.jpg width = 400></img>
 ### Date created
 This prject was created in July 21, 2020.
 
@@ -13,4 +14,4 @@ The Data is provided by [Motivate](https://www.motivateco.com/), a bike share sy
 bikeshare.py
 
 ### Credits
-[Udacity](https://udacity.com), [Motivate](https://www.motivateco.com/).
+[Udacity](https://udacity.com), [github](https://www.github.com), [Motivate](https://www.motivateco.com/).
