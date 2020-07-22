@@ -15,7 +15,7 @@ bikeshare.py
 
 ### Credits
 
-[<img src=images/udacity-logo.png width = 100>](https://udacity.com)
+[<img src=images/udacity-logo.png width = 140>](https://udacity.com)
 
 [<img src=images/github-logo.png width = 100>](https://www.github.com)
 
