@@ -297,8 +297,12 @@ def user_stats(df, city):
 
 def main():
     clear()
+    cwd=''
+    cwd = os.getcwd()
+    filename = inspect.getframeinfo(inspect.currentframe()).filename
+    path     = os.path.dirname(os.path.abspath(filename))
+    os.chdir(path)
     while True:
-        #clear()
         menu_display()
         while True:
             menu_input = input('Choose Menu Item from 1 to 7 : ')
@@ -316,6 +320,7 @@ def main():
             exit_input = input('\nWould you really like to exit? Enter yes or no.\n')
             if exit_input == "yes":
                 clear()
+                os.chdir(cwd)
                 break
         else:
             if 'df' not in locals():
