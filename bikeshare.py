@@ -29,7 +29,11 @@ def clear():
         _ = os.system('clear')
 
 def menu_display():
-    """ Display the Principal Menu  """
+    """ Display the Principal Menu
+    
+    The user have to choose a number between 1 to 7.
+    Each number allow the user to activate an element of the menu_display
+    """
 
     #separator_display('Bikeshare Application Menu', ' ')
     print('-'*79)
