@@ -1,15 +1,16 @@
 ### Date created
-Include the date you created this project and README file.
+This prject was created in July 21, 2020.
 
 ### Project Title
-Replace the Project Title
+Explore US Bike Share Data
 
 ### Description
-Describe what your project is about and what it does
+The aim is to write a Python code in order to uncover patterns among bike share usage in three US cities : Chicago, New York City, and Washington, DC.
+
+The Data is provided by [Motivate](https://www.motivateco.com/), a bike share system provider.
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+[Udacity](https://udacity.com), [Motivate](https://www.motivateco.com/).
