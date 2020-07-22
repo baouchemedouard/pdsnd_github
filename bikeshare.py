@@ -140,33 +140,34 @@ def load_data(city, month, day):
 def raw_data_display(df):
     """To display the raw data from DataFrame"""
 
+    i = int(input('Enter the number of rows to be displayed : '))    
+
     separator_display("Displaying raw Data", "-")
     print('\nData Columns details :\n')
     pd.set_option('display.max_columns', None)
 
     cols = [col for col in df.columns if col not in ['trip', 'Unnamed: 0']]
     print(df[cols].info())
-    print('\nThe 5 first rows of the Data : \n')
-    print(df[cols].head(5))
+    print('\nThe {} first rows of the Data : \n'.format(i))
+    print(df[cols].head(i))
     print()
-
-    i = 5
-    while i <= len(df) :
-        continue_display = input('Would you display the next 5 lines of raw data? "y" for yes, "n" for no.\nYou can even jump to a specified row where the row number between 0 and {} : '.format(len(df) - 1))
+    
+    count = i
+    while count <= len(df) :
+        continue_display = input('Would you display the next {} lines of raw data? "y" for yes, "n" for no.\nYou can even jump to a specified row where the row number between 0 and {} : '.format(i, len(df) - 1))
         print("-"*79)
         if continue_display.lower() == "y" or continue_display.lower() == "yes":
-            print(df[cols].iloc[i:(i + 5), :])
-            i += 5
+            print(df[cols].iloc[count:(count + i), :])
+            count += i 
         elif continue_display.lower() == "n" or continue_display.lower() == "no":
             clear()
             break
         elif (continue_display.isdigit()) and (int(continue_display) in range(len(df))) and (int(continue_display) >= 0):
-            i = int(continue_display)
-            print(df[cols].iloc[int(continue_display):(int(continue_display) + 5), :])
-            i += 5
+            count = int(continue_display)
+            print(df[cols].iloc[int(continue_display):(int(continue_display) + i), :])
+            count += i
         else:
             print("\nInvalid input.\n")
-
 
 
 def time_stats(df):
