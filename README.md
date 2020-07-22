@@ -14,4 +14,9 @@ The Data is provided by [Motivate](https://www.motivateco.com/), a bike share sy
 bikeshare.py
 
 ### Credits
-[Udacity](https://udacity.com), [github](https://www.github.com), [Motivate](https://www.motivateco.com/).
+
+[<img src=images/udacity-logo.png width = 100>](https://udacity.com)
+
+[<img src=images/github-logo.png width = 100>](https://www.github.com)
+
+[<img src=images/Motivate_Logo.png width = 100>](https://www.motivateco.com/)
